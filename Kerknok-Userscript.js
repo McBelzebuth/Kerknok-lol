@@ -35,6 +35,7 @@
                 user = document.getElementById('user');
                 this.user = user.getAttribute('title');
                 time = Date.now();
+                
                 var keyM = this.domain+'money';
                 if (GM_getValue(keyM) && time < GM_getValue(keyM)+3600000)
                 {
